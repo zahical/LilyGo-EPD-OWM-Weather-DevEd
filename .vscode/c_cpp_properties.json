@@ -92,7 +92,7 @@
                 "C:\\Users\\pspyc\\Documents\\Arduino\\hardware\\espressif\\esp32\\tools\\sdk\\include\\fb_gfx",
                 "C:\\Users\\pspyc\\Documents\\Arduino\\hardware\\espressif\\esp32\\cores\\esp32",
                 "C:\\Users\\pspyc\\Documents\\Arduino\\hardware\\espressif\\esp32\\variants\\esp32",
-                "C:\\Users\\pspyc\\Documents\\Arduino\\libraries\\LilyGo-EPD47-master\\src",
+                "C:\\Users\\pspyc\\Documents\\Arduino\\libraries\\LilyGo-EPD47\\src",
                 "C:\\Users\\pspyc\\Documents\\Arduino\\libraries\\ArduinoJson\\src",
                 "C:\\Users\\pspyc\\Documents\\Arduino\\hardware\\espressif\\esp32\\libraries\\HTTPClient\\src",
                 "C:\\Users\\pspyc\\Documents\\Arduino\\hardware\\espressif\\esp32\\libraries\\WiFi\\src",
@@ -352,7 +352,8 @@
                 "__GCC_ATOMIC_SHORT_LOCK_FREE=2",
                 "__UINT_FAST8_TYPE__=unsigned int",
                 "__ATOMIC_ACQ_REL=4",
-                "__ATOMIC_RELEASE=3"
+                "__ATOMIC_RELEASE=3",
+                "USBCON"
             ]
         }
     ]
