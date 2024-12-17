@@ -1,0 +1,3 @@
+#define RPNG_IMPLEMENTATION
+#define RPNG_DEFLATE_IMPLEMENTATION
+#include "rpng.h"

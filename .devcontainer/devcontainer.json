@@ -1,0 +1,22 @@
+{
+    "name": "LilyGo EPD OWM DevEd",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    // To flash the LilyGo device from inside the .devcontainer, assuming WSL2,
+    // 1) Expose and attach the USB device to WSL using https://github.com/dorssel/usbipd-win
+    // 2) Uncomment the `runArgs` below
+    // 3) From VSCode's command palette, run `Dev Containers: Rebuild Container`
+    // It should now be possible to execute `pio run -e epd -t upload` from VSCode's terminal.
+    //
+    // runArgs is commented out by default, as it will prevent the devcontainer from starting
+    // if there's no `/dev/ttyACM0` actually  present.
+    "runArgs": [
+        //"--device=/dev/ttyACM0"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": ["llvm-vs-code-extensions.vscode-clangd", "vadimcn.vscode-lldb"]
+        }
+    }
+}

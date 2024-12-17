@@ -1,0 +1,18 @@
+---
+BasedOnStyle: Microsoft
+IndentWidth: 4
+---
+Language: Cpp
+ReferenceAlignment: Left
+AllowShortIfStatementsOnASingleLine: WithoutElse
+SeparateDefinitionBlocks: Always
+FixNamespaceComments: True
+AllowShortBlocksOnASingleLine: Always
+AllowShortFunctionsOnASingleLine: All     
+IndentCaseLabels: True 
+AlwaysBreakTemplateDeclarations: Yes
+AllowShortCaseLabelsOnASingleLine: True 
+QualifierAlignment: Right
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveMacros: Consecutive
+AlignEscapedNewlines: Left

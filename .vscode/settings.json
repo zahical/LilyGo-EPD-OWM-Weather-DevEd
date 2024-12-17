@@ -1,0 +1,10 @@
+{
+    "bookmarks.saveBookmarksInProject": true,
+    "files.associations": {},
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    // a personal preference, sorry
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never"
+}

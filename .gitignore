@@ -1,0 +1,10 @@
+# clangd cache
+/.cache/
+
+compile_commands.json
+
+# build output
+/.pio/
+
+# see _dev_config.h for an explanation
+/src/dev_config.h
