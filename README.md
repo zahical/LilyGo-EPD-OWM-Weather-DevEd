@@ -26,7 +26,7 @@ Based on code originally developed by [David Bird](https://github.com/markbirss/
 * Uses HTTPS for API calls, because, why share your API key with the world, even if it's free-tier?
 * [1] Now also displays OWM's [Air Quality Index](https://openweathermap.org/api/air-pollution) and the concentrations and safety-levels of three (user-configurable) air pollutants. Info is provided by another OWM free-tier API.
 * [2] Wind speed is now also indicated using [Wind Barbs](https://www.weather.gov/hfo/windbarbinfo).
-* [3] The wind finally blows in the correct direction :-P. (In the version I had, the wind arrow was drawn _towards_ the direction the wind was blowing _from_ and not in the direction it was blowing _to_, which was mildly confusing, at least to me)
+* [3] The wind finally blows in the correct direction :-P. (At least in the code version I started with, the wind arrow was drawn _towards_ the direction the wind was blowing _from_ and not in the direction it was blowing _to_, which was mildly confusing, at least to me)
 * Timezones are now handled with the help of the [AceTime](https://github.com/bxparks/AceTime) library, so no more fiddling with [cryptic TZ strings](https://www.di-mgt.com.au/wclock/help/wclo_tzexplain.html) while configuring the station.
 * [4] Now displays a 'DST in effect' indicator.
 * Refresh cycle errors (e.g. failed API calls) are now displayed [on-screen](doc_img/err_output.png), so you'll immediately notice if something isn't working.
@@ -219,12 +219,6 @@ There are a handful of unit tests, mostly related to the sleep scheduling code. 
 pio test -e host
 ```
 
-## A note on licensing
+## Licensing
 
-It seems the original version of the `LilyGo-EPD-4-7-OWM-Weather-Display` project was developed by David Bird and released [here](https://github.com/markbirss/LilyGo-EPD-4-7-OWM-Weather-Display) under a proprietary license. It was also included as a sample project in the [LilyGo-EPD47](https://github.com/Xinyuan-LilyGO/LilyGo-EPD47/tree/esp32s3/examples/weather) library but was later removed for copyright reasons.
-
-However, as the github user `DzikuVx` [pointed out](https://github.com/DzikuVx/LilyGo-EPD-4-7-OWM-Weather-Display/blob/main/README.md), the project was using the LilyGO-EPD library, which is itself GPLv3-licensed, and the GPL license [quite clearly states](https://www.gnu.org/licenses/gpl-faq.html#IfLibraryIsGPL) that in such a case, the entire body of work should also be GPL licensed. So, ultimately, `DzikuVx` forked the project and changed the license to GPLv3.
-
-As this fork is based on DzikuVx's [fork](https://github.com/DzikuVx/LilyGo-EPD-4-7-OWM-Weather-Display), it's GPLv3 licensed as well, with, of course, all copyright notices of the original author faithfully preserved.
-
-_I want to emphasize_ though that my goal here _isn't_ participating in some elaborate dispute on licensing intricacies. I just want to share the results of my effort, in case they might benefit other people whose OWM weather stations have stopped working. So, please, don't read too much into that section. :-)
+GPLv3 (or later), the same license as the fork's source fork.
